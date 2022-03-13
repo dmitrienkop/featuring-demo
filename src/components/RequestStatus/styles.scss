@@ -1,0 +1,53 @@
+.request {
+    align-items: center;
+    background: #fafafa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 4px 0 12px;
+    padding: 8px 16px;
+
+    &:last-child {
+        margin-bottom: 16px;
+    }
+}
+
+.period {
+    margin: 0 14px 0 16px;
+    width: 270px;
+}
+
+.status {
+    color: #666;
+    width: 304px;
+
+    &._approved {
+        color: #28c75d;
+    }
+}
+
+.requestIcon {
+    height: 40px;
+    width: 40px;
+}
+
+.removeBtn {
+    align-items: center;
+    cursor: pointer;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    opacity: .65;
+    transition: opacity .15s ease-out;
+    width: 24px;
+
+    &:not(:active):hover {
+        color: #999;
+        opacity: 1;
+    }
+}
+
+.removeIcon {
+    height: 16px;
+    width: 14px;
+}

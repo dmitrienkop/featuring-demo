@@ -1,0 +1,133 @@
+.img {
+    display: flex;
+    margin-bottom: 20px;
+
+    &.disabled {
+        opacity: .7;
+    }
+
+    &Block {
+        background: #F0F0F0;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4px;
+        height: 120px;
+        margin-right: 20px;
+        position: relative;
+        width: 220px;
+
+        .form._actionsAdditional & {
+            height: 83px;
+        }
+
+        &Placeholder,
+        &Loader,
+        &Error {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &Placeholder {
+            height: 30px;
+            width: 40px;
+        }
+
+        &Loader {
+            height: 24px;
+            width: 24px;
+        }
+        
+        &Loader {
+            display: none;
+        }
+        
+        &Error {
+            color: #FF1100;
+            display: none;
+            text-align: center;
+            width: calc(100% - 24px);
+        }
+
+        &._error {
+            background: rgba(255, 17, 0, .08);
+        }
+
+        &._error &Error {
+            display: block;
+        }
+
+        &._error &Placeholder,
+        &._image &Placeholder {
+            display: none;
+        }
+
+        &._actionsMain {
+            height: 83px;
+        }
+    }
+
+    &Remove {
+        align-items: center;
+        background: rgba(0, 0, 0, .25);
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        cursor: pointer;
+        height: 16px;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        transition: background-color .15s ease-out;
+        right: 0;
+        top: 0;
+        width: 16px;
+
+        &:hover {
+            background: rgba(0, 0, 0, .5);
+        }
+
+        &Icon {
+            height: 8px;
+            width: 8px;
+        }
+    }
+
+    &Description {
+        &Title {
+            color: #333;
+            font-size: 13px;
+            line-height: 18px;
+            margin: 0 0 4px;
+        }
+
+        &Text {
+            margin-bottom: 12px;
+        }
+
+        &Input {
+            height: 0;
+            opacity: 0;
+            position: absolute;
+            width: 0;
+        }
+    }
+
+    &Upload {
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        &Btn {
+            pointer-events: none;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+
+.form {
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 294px;
+    padding: 20px;
+}
+
+.field {
+    @include field;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.datepicker {
+    width: 220px;
+}
+
+.loader {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

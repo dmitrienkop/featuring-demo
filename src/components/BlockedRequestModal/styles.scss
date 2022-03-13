@@ -1,0 +1,24 @@
+.body {
+    box-sizing: border-box;
+    line-height: 20px;
+    max-width: 380px;
+    padding: 0 40px 45px;
+    text-align: center;
+}
+
+.title {
+    color: #333;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: -3px 0 15px;
+}
+
+.description {
+    margin-bottom: 25px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}

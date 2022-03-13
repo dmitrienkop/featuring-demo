@@ -1,0 +1,24 @@
+@import "../../styles/mixins.scss";
+
+.field {
+    @include field;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.datepicker {
+    width: 220px;
+}
+
+.error {
+    color: #f10;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-top: 8px;
+}
